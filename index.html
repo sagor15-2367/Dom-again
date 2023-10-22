@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    t
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Again</title>
+    <link rel="stylesheet" href="Style/style.css" />
+    <style>
+      .fruits-container li {
+        color: rgb(133, 4, 253);
+      }
+      #fruits-items {
+        color: black;
+      }
+      .importent-places{
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>wclcome to my dom</h1>
+    </header>
+    <main id="main-container">
+      <section>
+        <h1>my awasome dom site</h1>
+        <ul>
+          <li>Nahid Hasan</li>
+          <li>Sagor Alam</li>
+          <li>Korim molla</li>
+          <li>sumon KHan</li>
+          <li>saon</li>
+        </ul>
+      </section>
+      <section>
+        <h1>phone selecttion in our company.</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+          laborum minus magnam cum quasi temporibus.
+        </p>
+        <ul>
+          <li>apple</li>
+          <li>redmi</li>
+          <li>samphony</li>
+          <li>graminphone</li>
+        </ul>
+      </section>
+      <section id="places-containers" class="text-center large-text" >
+        <h1 id="places">Tours sport in our country</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          mollitia rerum soluta odit, blanditiis minima quia dolorem architecto
+          vel, incidunt a aspernatur eum. Facere illum possimus fuga tenetur,
+          minus repudiandae.
+        </p>
+        <ul id="places-list">
+          <li class="importent-places">sundorbon</li>
+          <li class="importent-places">sitakundo</li>
+          <li class="importent-places">vinnojogot</li>
+          <li class="importent-places">lalon sha majar</li>
+          <li>lalbeg kella</li>
+          <li>ahochan monzil elc.</li>
+        </ul>
+      </section>
+      <section class="fruits-container">
+        <h1 id="fruits-items">Friuts list</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque facere
+          aliquam vero voluptas eius molestiae animi quae, aspernatur quaerat
+          natus!
+        </p>
+        <ul>
+          <li>Am</li>
+          <li>kola</li>
+          <li>peyara</li>
+          <li>kathal</li>
+          <li>komla</li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="Style/styleIn.js"></script>
+    
+    <script>
+      // console.log('nahid');
+      //   const student = {
+      //     name: "sagor",
+      //     id: 191,
+      //     study: function (time) {
+      //       console.log(time, "study kortece.");
+      //     },
+      //   };
+      const liCollection = document.getElementsByTagName("li");
+      // console.log(liCollection);
+      for (const li of liCollection) {
+        // console.log(li);
+      }
+      const allElement = document.getElementsByTagName("h1");
+      for (const h1 of allElement) {
+        // console.log(h1);
+      }
+      const placess=document.getElementsByClassName('importent-places');
+    //   console.log(placess);
+    for(const sagor of placess){
+        // console.log(sagor);
+    }
+
+
+    // querySelectorAll
+    const someli=document.querySelectorAll('.fruits-container li');
+    // console.log(someli);
+    for(const li of someli){
+        // console.log(li.innerText);
+    }
+    </script>
+  </body>
 </html>
